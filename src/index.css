@@ -8,3 +8,8 @@ body {
   
   padding-top: 20px;
 }
+.bg-amazingNews{
+
+  background-image: url('../public/assets/images/bg.png');
+  background-size: cover;
+}
