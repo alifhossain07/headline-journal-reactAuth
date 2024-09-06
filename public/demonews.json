@@ -1,0 +1,85 @@
+[
+    {
+      "id": 1,
+      "others_info": {
+        "is_todays_pick": false,
+        "is_trending": true
+      },
+      "category_id": "3",
+      "category_name": "World News",
+      "rating": { "number": 4.5, "badge": "Excellent" },
+      "total_view": 1870,
+      "title": "Ukraine receives more military aid from allies on its independence day",
+      "author": {
+        "name": "system",
+        "published_date": "2022-08-24 23:15:00",
+        "img": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+      },
+      "thumbnail_url": "https://i.ibb.co/1vcgPzg/unsplash-Eh-Tc-C9s-YXsw-12.png",
+      "image_url": "https://i.ibb.co/PxC67LV/unsplash-Eh-Tc-C9s-YXsw-1.png",
+      "published_date": "2022-08-24 18:00:00",
+      "details": "U.S. President Joe Biden announced Wednesday that he is sending $2.98 billion US in new... read full story"
+    },
+    {
+      "id": 2,
+      "others_info": {
+        "is_todays_pick": false,
+        "is_trending": true
+      },
+      "category_id": "7",
+      "category_name": "Entertainment",
+      "rating": { "number": 4.2, "badge": "Excellent" },
+      "total_view": 354,
+      "title": "‘Self-obsessed liar’: Meghan mocked for Mandela story",
+      "author": {
+        "name": "Presstv",
+        "published_date": "2022-08-30 17:44:16",
+        "img": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+      },
+      "thumbnail_url": "https://i.ibb.co/j86wjDW/unsplash-Eh-Tc-C9s-YXsw-20.png",
+      "image_url": "https://i.ibb.co/hxG29nr/unsplash-Eh-Tc-C9s-YXsw-9.png",
+      "details": "Meghan Markle's Nelson Mandela story continues to unravel after the only South African cast member of 'The Lion King' said he was \"baffled\" by her suggestion that he told her his country had \"rejoiced\" when she married Prince Harry... read full story"
+    },
+    {
+      "id": 3,
+      "others_info": {
+        "is_todays_pick": false,
+        "is_trending": true
+      },
+      "category_id": "5",
+      "category_name": "Environment",
+      "rating": { "number": 4.5, "badge": "Excellent" },
+      "total_view": 100,
+      "title": "California to phase out sales of gas-powered cars",
+      "author": {
+        "name": "system",
+        "published_date": "2022-08-26 00:37:24",
+        "img": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+      },
+      "thumbnail_url": "https://i.ibb.co/L507x2V/unsplash-Eh-Tc-C9s-YXsw-14.png",
+      "image_url": "https://i.ibb.co/tKsvCyR/unsplash-Eh-Tc-C9s-YXsw-3.png",
+      "details": "California is set to phase out the sale of new gas-powered cars by 2035... read full story"
+    },
+    {
+      "id": 4,
+      "others_info": {
+        "is_todays_pick": false,
+        "is_trending": false
+      },
+      "category_id": "4",
+      "category_name": "Sports",
+      "rating": { "number": 4.5, "badge": "Excellent" },
+      "total_view": 100,
+      "title": "“Max Verstappen has plenty trophies” – Lando Norris wants $50 Million a year Dutch sensation to give him his trophy",
+      "author": {
+        "name": "system",
+        "published_date": "2022-08-26 00:37:24",
+        "img": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+      },
+      "thumbnail_url": "https://i.ibb.co/1rcTYYB/unsplash-Eh-Tc-C9s-YXsw-16.png",
+      "image_url": "https://i.ibb.co/CVg1Nrt/unsplash-Eh-Tc-C9s-YXsw-5.png",
+      "details": "Lando Norris jokingly asks Max Verstappen to give him a trophy, acknowledging Max's dominance in F1... read full story"
+    }
+   
+  ]
+  
