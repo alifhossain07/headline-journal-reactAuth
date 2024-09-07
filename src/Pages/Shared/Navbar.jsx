@@ -1,14 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import userDefaultPic from "../../../public/assets/images/user.png";
+import LoginPage from "../LoginPage/LoginPage";
 
 
 const Navbar = () => {
 
     const navLinks = <>
 
-        <li><NavLink to="/" >Home</NavLink></li>
-        <li><NavLink to="/about" >About</NavLink></li>
-        <li><NavLink to="/career" >Career</NavLink></li>
+        <li className="text-xl font-bold"><NavLink to="/" >Home</NavLink></li>
+        <li className="text-xl font-bold"><NavLink to="/about" >About</NavLink></li>
+        <li className="text-xl font-bold"><NavLink to="/career" >Career</NavLink></li>
         
     </>
 
@@ -56,7 +57,7 @@ const Navbar = () => {
                     src={userDefaultPic} />
                 </div>
             </div>
-            <Link>
+            <Link to="/login">
                 <button className="btn btn-secondary px-10">Login</button>
             </Link>
             
