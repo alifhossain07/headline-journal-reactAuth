@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../Shared/Navbar';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const LoginPage = () => {
+
+    const {signIn}= useContext(AuthContext);
+
+
+    const handleLogin = e => {
+
+
+
+       
+        e.preventDefault();
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget);
+        const email = form.get('email');
+        const password = form.get('password');
+        console.log(email,password);
+        
+        signIn(email,password)
+        .then(result =>{
+            console.log(result.user);
+            
+        })
+        .catch(error=>{
+            console.error(error); 
+        })
+
+
+
+    };
+
     return (
         <div>
             <div>
@@ -19,18 +49,18 @@ const LoginPage = () => {
                     
                     </div>
                     <div className="card bg-base-100 w-full  shrink-0 shadow-2xl">
-                    <form className="card-body">
+                    <form onSubmit={handleLogin} className="card-body">
                         <div className="form-control">
                         <label className="label">
                             <span className="font-bold text-xl label-text">Email Address</span>
                         </label>
-                        <input type="email" placeholder="email" className="input input-bordered  h-16" required />
+                        <input name="email" type="email" placeholder="email" className="input input-bordered  h-16" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-bold text-xl ">Password</span>
                         </label>
-                        <input type="password" placeholder="password" className="input input-bordered h-16" required />
+                        <input name="password" type="password" placeholder="password" className="input input-bordered h-16" required />
                         <label className="label">
                             <a href="#" className="label-text-alt link link-hover text-lg">Forgot password?</a>
                         </label>

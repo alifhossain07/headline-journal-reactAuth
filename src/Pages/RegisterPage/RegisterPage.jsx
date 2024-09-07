@@ -1,8 +1,41 @@
+import { useContext } from "react";
 import Navbar from "../Shared/Navbar";
 import { Link } from 'react-router-dom';
+import { AuthContext } from './../../Providers/AuthProvider';
+
 
 
 const RegisterPage = () => {
+
+    const {createUser} = useContext(AuthContext);
+
+    const handleRegister = e => {
+
+        e.preventDefault();
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget);
+        const name = form.get('name');
+        const photo = form.get('url');
+        const email = form.get('email');
+        const password = form.get('password');
+        console.log(email, password,name,photo);
+
+        // Create User
+
+        createUser(email,password)
+        .then(result => {
+            console.log(result.user);
+            alert('User Created Successfully');
+            
+        })
+        .catch(error => {
+            console.error(error);
+            alert('Failed to Create User');
+        });
+
+
+
+};
     return (
         <div>
             <div>
@@ -20,29 +53,39 @@ const RegisterPage = () => {
                     
                     </div>
                     <div className="card bg-base-100 w-full  shrink-0 shadow-2xl">
-                    <form className="card-body">
+                    <form onSubmit={handleRegister} className="card-body">
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="font-bold text-xl label-text">Your Name</span>
+                        </label>
+                        <input type="text" name="name" placeholder="Enter Your Name" className="input input-bordered  h-16" required />
+                        </div>
+                        <div className="form-control">
+                        <label className="label">
+                            <span className="font-bold text-xl label-text">Photo URL</span>
+                        </label>
+                        <input type="text" name="url" placeholder="Enter Photo URL" className="input input-bordered  h-16" required />
+                        </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="font-bold text-xl label-text">Email Address</span>
                         </label>
-                        <input type="email" placeholder="email" className="input input-bordered  h-16" required />
+                        <input name="email" type="email" placeholder="email" className="input input-bordered  h-16" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
                             <span className="label-text font-bold text-xl ">Password</span>
                         </label>
-                        <input type="password" placeholder="password" className="input input-bordered h-16" required />
-                        <label className="label">
-                            <a href="#" className="label-text-alt link link-hover text-lg">Forgot password?</a>
-                        </label>
+                        <input name="password" type="password" placeholder="password" className="input input-bordered h-16" required />
+                        
                         </div>
                         <div className="form-control mt-6">
-                        <button className=" bg-black text-white text-xl p-4 rounded-xl hover:bg-gray-700 duration-300">Login</button>
+                        <button className=" bg-black text-white text-xl p-4 rounded-xl hover:bg-gray-700 duration-300">Register</button>
                         </div>
                     </form>
                     
                     </div>
-                    <h1 className='mt-10 text-xl font-semibold'>Dont have an Account? <Link className='text-blue-500' to='/register'>Register</Link>  Here</h1>
+                    <h1 className='mt-10 text-xl font-semibold'>Already have an Account? <Link className='text-blue-500' to='/login'>Login</Link>  Here</h1>
                 </div>
 
             </div>
